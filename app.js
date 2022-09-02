@@ -77,7 +77,7 @@ app.get("/get-calculated-transaction-balance", async (req, res, next) => {
     res.json({ totalBalance });
     next();
   } catch (e) {
-    console.log("error", e);
+    console.log("error: ", e);
   }
 });
 
